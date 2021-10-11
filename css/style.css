@@ -16,6 +16,7 @@ body {
 }
 
 .header {
+  margin-bottom: 63px;
   min-height: 100vh;
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.jpg) center top/cover no-repeat;
 }
@@ -181,4 +182,87 @@ body {
 
 .select-cinema {
   min-width: 470px;
+}
+
+.select option {
+  background-color: #621402;
+}
+
+.scheme {
+  margin-bottom: 40px;
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+}
+
+.scheme path:not(.light) {
+  cursor: pointer;
+  fill: rgba(255, 255, 255, 0.15);
+}
+
+.scheme path:not(.light):hover {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+  cursor: not-allowed;
+  fill: rgba(255, 255, 255, 0.05);
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+  fill: #fe8e05;
+}
+
+.legend {
+  padding: 22px 0 38px;
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.legend-label {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.legend svg {
+  margin-right: 15px;
+}
+
+.legend-active {
+  color: #fe8e05;
+}
+
+.price {
+  padding: 20px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-label {
+  display: block;
+  font-size: 18px;
+  line-height: 1.167;
+}
+
+.price-tag {
+  font-size: 52px;
+  line-height: 1.17;
+}
+
+.button {
+  background-color: #fe8e05;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.167;
+  padding: 1.33em 2.89em;
+  text-decoration: none;
 }
